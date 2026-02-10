@@ -1,0 +1,224 @@
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================
+   BODY
+===================== */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffb6c1, #ffe6f0);
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #b30059;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* =====================
+   HEADINGS
+===================== */
+h1 {
+  margin-top: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* =====================
+   STATUS MESSAGE
+===================== */
+#statusMsg {
+  min-height: 25px;
+  font-weight: bold;
+  color: #ff1a75;
+  margin-bottom: 20px;
+}
+
+/* =====================
+   IMAGE
+===================== */
+img {
+  width: 260px;
+  max-width: 90%;
+  border-radius: 20px;
+  margin: 25px auto 30px;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* =====================
+   BUTTON AREA
+===================== */
+#buttonArea {
+  margin: 20px auto;
+  min-height: 140px;
+  max-width: 320px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+button {
+  font-size: 1.2rem;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 0; /* rectangle shape */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* YES BUTTON */
+.yes {
+  background: linear-gradient(#17d524, #12a91b);
+  color: white;
+  font-weight: bold;
+}
+
+/* NO BUTTON */
+.no {
+  background: linear-gradient(#ff0202, #c70000);
+  color: white;
+  font-weight: bold;
+}
+
+/* =====================
+   FLOATING HEARTS
+===================== */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 22px;
+  animation: floatUp 5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0) scale(1); opacity: 1; }
+  to { transform: translateY(-110vh) scale(1.4); opacity: 0; }
+}
+
+/* =====================
+   SHAKE EFFECT
+===================== */
+.shake {
+  animation: shake 0.2s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* =====================
+   FULL YES MODE
+===================== */
+.full-yes {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  font-size: 2.5rem !important;
+  border-radius: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ff99cc, #ff4da6);
+  color: white;
+  z-index: 9999;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+}
+
+/* =====================
+   YES PAGE STYLE
+===================== */
+.yes-page {
+  background: linear-gradient(to bottom right, #ff9ecf, #ffd6e8);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.yes-card {
+  background: white;
+  max-width: 420px;
+  width: 90%;
+  padding: 30px 25px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.yes-card h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  color: #ff4d88;
+  margin-bottom: 15px;
+}
+
+.love-text {
+  font-size: 1.2rem;
+  color: #cc0052;
+  margin-bottom: 15px;
+}
+
+.plan-box {
+  background: #fff0f6;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #b30059;
+}
+
+.yes-card img {
+  width: 220px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.yes-card h2 {
+  margin-top: 15px;
+  color: #ff1a75;
+}
+
+.img-center {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.img-center img {
+  max-width: 90%;
+  border-radius: 15px;
+}
